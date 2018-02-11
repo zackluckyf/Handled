@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   page: number = 1;
+  facebook: boolean = false;
+  amazon: boolean = false;
+  google: boolean = false;
+  pinterest: boolean = false;
 
   constructor() { }
 
@@ -26,8 +30,8 @@ export class NavbarComponent implements OnInit {
     this.page++;
   }
 
-  submit(){
-    alert('Submitted Form fool!');
+  toggle(variable) {
+    this[variable] = !this[variable];
   }
 
 
