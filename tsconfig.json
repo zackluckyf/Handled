@@ -34,6 +34,7 @@
       "@ngtools/webpack": [ "./packages/@ngtools/webpack/src" ]
     }
   },
+  "include": ["node_modules/angular-bootstrap-md/**/*.ts",  "src/**/*.ts"],
   "exclude": [
     "packages/@angular/cli/blueprints/*/files/**/*",
     "dist/**/*",

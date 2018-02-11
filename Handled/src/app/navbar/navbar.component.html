@@ -1,0 +1,185 @@
+
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
+  <logo>
+      <a id="brand" class="navbar-brand">Handled</a>
+  </logo>
+  <links>
+      <ul class="navbar-nav">
+        <li class="nav-item" [ngClass]="{ active: page === 1 ? true: false }">
+          <a class="nav-link waves-light" (click)="setPage(1)" mdbRippleRadius>Communication</a>
+        </li>
+        <li class="nav-item" [ngClass]="{ active: page === 2 ? true: false }">
+          <a class="nav-link waves-light" (click)="setPage(2)" mdbRippleRadius>Family Demographics</a>
+        </li>
+        <li class="nav-item" [ngClass]="{ active: page === 3 ? true: false }">
+          <a class="nav-link waves-light" (click)="setPage(3)" mdbRippleRadius>Lifestyle</a>
+        </li>
+        <li class="nav-item" [ngClass]="{ active: page === 4 ? true: false }">
+          <a class="nav-link waves-light" (click)="setPage(4)" mdbRippleRadius>Integrations</a>
+        </li>
+      </ul>
+  </links>
+
+</mdb-navbar>
+
+<main>
+  <div class="container-fluid">
+    <div class="row">&zwnj;</div>
+    <div *ngIf="page === 1" class="row">
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">How would you like to receive communication from us?</h4>
+              <div class="form-group checkbox-default">
+                  <input type="checkbox" id="text">
+                  <label for="text">Text</label>
+              </div>
+              <div class="form-group checkbox-default">
+                  <input type="checkbox" id="communication">
+                  <label for="communication">In-app communication</label>
+              </div>
+              <div class="form-group checkbox-default">
+                  <input type="checkbox" id="calendar">
+                  <label for="calendar">Calendar reminders</label>
+              </div>
+              <div class="form-group checkbox-default">
+                  <input type="checkbox" id="email">
+                  <label for="email">Email</label>
+              </div>
+              <div class="form-group checkbox-default">
+                  <input type="checkbox" id="phone">
+                  <label for="phone">Phone</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">How would you like to communicate with us? </h4>
+              <div class="form-group checkbox-default">
+                  <input type="checkbox" id="text2">
+                  <label for="text2">Text</label>
+              </div>
+              <div class="form-group checkbox-default">
+                  <input type="checkbox" id="communication2">
+                  <label for="communication2">In-app communication</label>
+              </div>
+              <div class="form-group checkbox-default">
+                  <input type="checkbox" id="calendar2">
+                  <label for="calendar2">Calendar reminders</label>
+              </div>
+              <div class="form-group checkbox-default">
+                  <input type="checkbox" id="email2">
+                  <label for="email2">Email</label>
+              </div>
+              <div class="form-group checkbox-default">
+                  <input type="checkbox" id="phone2">
+                  <label for="phone2">Phone</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">In general, how much lead time do you prefer to have for receiving tasks?</h4>
+              <div class="form-group radio-green-gap ">
+                <input name="group4" type="radio" class="with-gap" id="lots">
+                <label for="lots">Lots of lead time (3+ weeks in advance)</label>
+              </div>
+              <div class="form-group radio-green-gap">
+                <input name="group4" type="radio" class="with-gap" id="average">
+                <label for="average">Average lead time (1-2 weeks in advance)</label>
+              </div>
+              <div class="form-group radio-green-gap">
+                  <input name="group4" type="radio" class="with-gap" id="just">
+                  <label for="just">Just in time (days in advance)</label>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="page === 2" class="row">
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Do you have a live-in partner or spouse?</h4>
+              <div class="form-group radio-green-gap ">
+                  <input name="group4" type="radio" class="with-gap" id="yes">
+                  <label for="yes">Yes</label>
+              </div>
+              <div class="form-group radio-green-gap">
+                  <input name="group4" type="radio" class="with-gap" id="no">
+                  <label for="no">No</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">&zwnj;</div>
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Do you have any pets?</h4>
+              <div class="form-group radio-green-gap ">
+                  <input name="group4" type="radio" class="with-gap" id="dog">
+                  <label for="dog">Dog</label>
+              </div>
+              <div class="form-group radio-green-gap">
+                  <input name="group4" type="radio" class="with-gap" id="cat">
+                  <label for="cat">Cat</label>
+              </div>
+              <div class="form-group radio-green-gap">
+                  <input name="group4" type="radio" class="with-gap" id="na">
+                  <label for="na">N/A</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">How many children do you have?</h4>
+              <div class="form-group radio-green-gap ">
+                  <input name="group4" type="radio" class="with-gap" id="onechild">
+                  <label for="onechild">1</label>
+              </div>
+              <div class="form-group radio-green-gap">
+                  <input name="group4" type="radio" class="with-gap" id="twochild">
+                  <label for="twochild">2</label>
+              </div>
+              <div class="form-group radio-green-gap ">
+                  <input name="group4" type="radio" class="with-gap" id="threechild">
+                  <label for="threechild">3</label>
+              </div>
+              <div class="form-group radio-green-gap">
+                  <input name="group4" type="radio" class="with-gap" id="fourchild">
+                  <label for="fourchild">4+</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Do your kids have any special needs?</h4>
+              <div class="form-group radio-green-gap ">
+                  <input name="group4" type="radio" class="with-gap" id="yes2">
+                  <label for="yes2">Yes</label>
+              </div>
+              <div class="form-group radio-green-gap">
+                  <input name="group4" type="radio" class="with-gap" id="no2">
+                  <label for="no2">No</label>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div *ngIf="page === 3" class="container-fluid">
+      On page 3
+    </div>
+    <div *ngIf="page === 4" class="container-fluid">
+      On page 4
+    </div>
+  </div>
+</main>
+
+
