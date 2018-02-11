@@ -18,5 +18,17 @@ export class NavbarComponent implements OnInit {
     this.page = page;
   }
 
+  previous(){
+    this.page--;
+  }
+
+  next(){
+    this.page++;
+  }
+
+  submit(){
+    alert('Submitted Form fool!');
+  }
+
 
 }

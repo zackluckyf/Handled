@@ -26,158 +26,487 @@
   <div class="container-fluid">
     <div class="row">&zwnj;</div>
     <div *ngIf="page === 1" class="row">
-        <div class="col-lg-4 col-md-12 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">How would you like to receive communication from us?</h4>
-              <div class="form-group checkbox-default">
-                  <input type="checkbox" id="text">
-                  <label for="text">Text</label>
-              </div>
-              <div class="form-group checkbox-default">
-                  <input type="checkbox" id="communication">
-                  <label for="communication">In-app communication</label>
-              </div>
-              <div class="form-group checkbox-default">
-                  <input type="checkbox" id="calendar">
-                  <label for="calendar">Calendar reminders</label>
-              </div>
-              <div class="form-group checkbox-default">
-                  <input type="checkbox" id="email">
-                  <label for="email">Email</label>
-              </div>
-              <div class="form-group checkbox-default">
-                  <input type="checkbox" id="phone">
-                  <label for="phone">Phone</label>
-              </div>
+      <div class="col-lg-4 col-md-12 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">How would you like to receive communication from us?</h4>
+            <div class="form-group checkbox-default">
+                <input type="checkbox" id="text">
+                <label for="text">Text</label>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">How would you like to communicate with us? </h4>
-              <div class="form-group checkbox-default">
-                  <input type="checkbox" id="text2">
-                  <label for="text2">Text</label>
-              </div>
-              <div class="form-group checkbox-default">
-                  <input type="checkbox" id="communication2">
-                  <label for="communication2">In-app communication</label>
-              </div>
-              <div class="form-group checkbox-default">
-                  <input type="checkbox" id="calendar2">
-                  <label for="calendar2">Calendar reminders</label>
-              </div>
-              <div class="form-group checkbox-default">
-                  <input type="checkbox" id="email2">
-                  <label for="email2">Email</label>
-              </div>
-              <div class="form-group checkbox-default">
-                  <input type="checkbox" id="phone2">
-                  <label for="phone2">Phone</label>
-              </div>
+            <div class="form-group checkbox-default">
+                <input type="checkbox" id="communication">
+                <label for="communication">In-app communication</label>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">In general, how much lead time do you prefer to have for receiving tasks?</h4>
-              <div class="form-group radio-green-gap ">
-                <input name="group4" type="radio" class="with-gap" id="lots">
-                <label for="lots">Lots of lead time (3+ weeks in advance)</label>
-              </div>
-              <div class="form-group radio-green-gap">
-                <input name="group4" type="radio" class="with-gap" id="average">
-                <label for="average">Average lead time (1-2 weeks in advance)</label>
-              </div>
-              <div class="form-group radio-green-gap">
-                  <input name="group4" type="radio" class="with-gap" id="just">
-                  <label for="just">Just in time (days in advance)</label>
-                </div>
+            <div class="form-group checkbox-default">
+                <input type="checkbox" id="calendar">
+                <label for="calendar">Calendar reminders</label>
+            </div>
+            <div class="form-group checkbox-default">
+                <input type="checkbox" id="email">
+                <label for="email">Email</label>
+            </div>
+            <div class="form-group checkbox-default">
+                <input type="checkbox" id="phone">
+                <label for="phone">Phone</label>
             </div>
           </div>
         </div>
       </div>
-      <div *ngIf="page === 2" class="row">
-        <div class="col-lg-4 col-md-12 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Do you have a live-in partner or spouse?</h4>
-              <div class="form-group radio-green-gap ">
-                  <input name="group4" type="radio" class="with-gap" id="yes">
-                  <label for="yes">Yes</label>
-              </div>
-              <div class="form-group radio-green-gap">
-                  <input name="group4" type="radio" class="with-gap" id="no">
-                  <label for="no">No</label>
-              </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">How would you like to communicate with us? </h4>
+            <div class="form-group checkbox-default">
+                <input type="checkbox" id="text2">
+                <label for="text2">Text</label>
             </div>
-          </div>
-          <div class="row">&zwnj;</div>
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Do you have any pets?</h4>
-              <div class="form-group radio-green-gap ">
-                  <input name="group4" type="radio" class="with-gap" id="dog">
-                  <label for="dog">Dog</label>
-              </div>
-              <div class="form-group radio-green-gap">
-                  <input name="group4" type="radio" class="with-gap" id="cat">
-                  <label for="cat">Cat</label>
-              </div>
-              <div class="form-group radio-green-gap">
-                  <input name="group4" type="radio" class="with-gap" id="na">
-                  <label for="na">N/A</label>
-              </div>
+            <div class="form-group checkbox-default">
+                <input type="checkbox" id="communication2">
+                <label for="communication2">In-app communication</label>
+            </div>
+            <div class="form-group checkbox-default">
+                <input type="checkbox" id="calendar2">
+                <label for="calendar2">Calendar reminders</label>
+            </div>
+            <div class="form-group checkbox-default">
+                <input type="checkbox" id="email2">
+                <label for="email2">Email</label>
+            </div>
+            <div class="form-group checkbox-default">
+                <input type="checkbox" id="phone2">
+                <label for="phone2">Phone</label>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">How many children do you have?</h4>
-              <div class="form-group radio-green-gap ">
-                  <input name="group4" type="radio" class="with-gap" id="onechild">
-                  <label for="onechild">1</label>
-              </div>
-              <div class="form-group radio-green-gap">
-                  <input name="group4" type="radio" class="with-gap" id="twochild">
-                  <label for="twochild">2</label>
-              </div>
-              <div class="form-group radio-green-gap ">
-                  <input name="group4" type="radio" class="with-gap" id="threechild">
-                  <label for="threechild">3</label>
-              </div>
-              <div class="form-group radio-green-gap">
-                  <input name="group4" type="radio" class="with-gap" id="fourchild">
-                  <label for="fourchild">4+</label>
-              </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">In general, how much lead time do you prefer to have for receiving tasks?</h4>
+            <div class="form-group radio-green-gap ">
+              <input name="group4" type="radio" class="with-gap" id="lots">
+              <label for="lots">Lots of lead time (3+ weeks in advance)</label>
             </div>
+            <div class="form-group radio-green-gap">
+              <input name="group4" type="radio" class="with-gap" id="average">
+              <label for="average">Average lead time (1-2 weeks in advance)</label>
+            </div>
+            <div class="form-group radio-green-gap">
+                <input name="group4" type="radio" class="with-gap" id="just">
+                <label for="just">Just in time (days in advance)</label>
+              </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Do your kids have any special needs?</h4>
-              <div class="form-group radio-green-gap ">
-                  <input name="group4" type="radio" class="with-gap" id="yes2">
-                  <label for="yes2">Yes</label>
-              </div>
-              <div class="form-group radio-green-gap">
-                  <input name="group4" type="radio" class="with-gap" id="no2">
-                  <label for="no2">No</label>
-              </div>
-            </div>
-          </div>
       </div>
     </div>
-    <div *ngIf="page === 3" class="container-fluid">
-      On page 3
+    <div *ngIf="page === 2" class="row">
+      <div class="col-lg-4 col-md-12 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Do you have a live-in partner or spouse?</h4>
+            <div class="form-group radio-green-gap ">
+                <input name="group4" type="radio" class="with-gap" id="yes">
+                <label for="yes">Yes</label>
+            </div>
+            <div class="form-group radio-green-gap">
+                <input name="group4" type="radio" class="with-gap" id="no">
+                <label for="no">No</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">&zwnj;</div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Do you have any pets?</h4>
+            <div class="form-group radio-green-gap ">
+                <input name="group4" type="radio" class="with-gap" id="dog">
+                <label for="dog">Dog</label>
+            </div>
+            <div class="form-group radio-green-gap">
+                <input name="group4" type="radio" class="with-gap" id="cat">
+                <label for="cat">Cat</label>
+            </div>
+            <div class="form-group radio-green-gap">
+                <input name="group4" type="radio" class="with-gap" id="na">
+                <label for="na">N/A</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">How many children do you have?</h4>
+            <div class="form-group radio-green-gap ">
+                <input name="group4" type="radio" class="with-gap" id="onechild">
+                <label for="onechild">1</label>
+            </div>
+            <div class="form-group radio-green-gap">
+                <input name="group4" type="radio" class="with-gap" id="twochild">
+                <label for="twochild">2</label>
+            </div>
+            <div class="form-group radio-green-gap ">
+                <input name="group4" type="radio" class="with-gap" id="threechild">
+                <label for="threechild">3</label>
+            </div>
+            <div class="form-group radio-green-gap">
+                <input name="group4" type="radio" class="with-gap" id="fourchild">
+                <label for="fourchild">4+</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">&zwnj;</div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Describe your residence…check as many as apply</h4>
+            <div class="form-group checkbox-default">
+                <input type="checkbox" id="sfh">
+                <label for="sfh">Single family home</label>
+            </div>
+            <div class="form-group checkbox-default">
+                <input type="checkbox" id="condo">
+                <label for="condo">Condo</label>
+            </div>
+            <div class="form-group checkbox-default">
+                <input type="checkbox" id="apartment">
+                <label for="apartment">Apartment</label>
+            </div>
+            <div class="form-group checkbox-default">
+                <input type="checkbox" id="urban">
+                <label for="urban">Urban</label>
+            </div>
+            <div class="form-group checkbox-default">
+                <input type="checkbox" id="suburban">
+                <label for="suburban">Suburban</label>
+            </div>
+            <div class="form-group checkbox-default">
+                <input type="checkbox" id="rural">
+                <label for="rural">Rural</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Do your kids have any special needs?</h4>
+            <div class="form-group radio-green-gap ">
+                <input name="group4" type="radio" class="with-gap" id="yes2">
+                <label for="yes2">Yes</label>
+            </div>
+            <div class="form-group radio-green-gap">
+                <input name="group4" type="radio" class="with-gap" id="no2">
+                <label for="no2">No</label>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div *ngIf="page === 4" class="container-fluid">
-      On page 4
+    <div *ngIf="page === 3" class="row">
+      <div class="col-lg-4 col-md-12 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Describe your lifestyle</h4>
+            <div class="form-group radio-green-gap ">
+                <input name="group4" type="radio" class="with-gap" id="active">
+                <label for="active">Active</label>
+            </div>
+            <div class="form-group radio-green-gap">
+                <input name="group4" type="radio" class="with-gap" id="moderate">
+                <label for="moderate">Moderate</label>
+            </div>
+            <div class="form-group radio-green-gap">
+                <input name="group4" type="radio" class="with-gap" id="low">
+                <label for="low">Low Activity</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">&zwnj;</div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">How often do you work out?</h4>
+            <div class="form-group radio-green-gap ">
+                <input name="group4" type="radio" class="with-gap" id="week01">
+                <label for="week01">0-1 times a week</label>
+            </div>
+            <div class="form-group radio-green-gap">
+                <input name="group4" type="radio" class="with-gap" id="week13">
+                <label for="week13">1-3 times a week</label>
+            </div>
+            <div class="form-group radio-green-gap">
+                <input name="group4" type="radio" class="with-gap" id="week35">
+                <label for="week35">3-5 times a week</label>
+            </div>
+            <div class="form-group radio-green-gap">
+                <input name="group4" type="radio" class="with-gap" id="week5">
+                <label for="week5">5+ times a week</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">In general, how much lead time do you prefer to have for receiving tasks?</h4>
+            <div class="form-group radio-green-gap ">
+              <input name="group4" type="radio" class="with-gap" id="lots">
+              <label for="lots">Lots of lead time (3+ weeks in advance)</label>
+            </div>
+            <div class="form-group radio-green-gap">
+              <input name="group4" type="radio" class="with-gap" id="average">
+              <label for="average">Average lead time (1-2 weeks in advance)</label>
+            </div>
+            <div class="form-group radio-green-gap">
+                <input name="group4" type="radio" class="with-gap" id="just">
+                <label for="just">Just in time (days in advance)</label>
+              </div>
+          </div>
+        </div> 
+        <div class="row">&zwnj;</div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">How often do you and your partner go out on dates?</h4>
+            <div class="form-group radio-green-gap ">
+              <input name="group4" type="radio" class="with-gap" id="never">
+              <label for="never">Never</label>
+            </div>
+            <div class="form-group radio-green-gap">
+              <input name="group4" type="radio" class="with-gap" id="month1">
+              <label for="month1">Once a month</label>
+            </div>
+            <div class="form-group radio-green-gap">
+              <input name="group4" type="radio" class="with-gap" id="month23">
+              <label for="month23">2-3 times a month</label>
+            </div>
+            <div class="form-group radio-green-gap">
+              <input name="group4" type="radio" class="with-gap" id="often">
+              <label for="often">Often</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">What activities are you and your kids involved in?</h4>
+            <div class="form-group checkbox-default">
+              <input type="checkbox" id="sfh">
+              <label for="sfh">Single family home</label>
+            </div>
+            <div class="form-group checkbox-default">
+              <input type="checkbox" id="sports">
+              <label for="sports">Sports</label>
+            </div>
+            <div class="form-group checkbox-default">
+              <input type="checkbox" id="clubs">
+              <label for="clubs">Clubs</label>
+            </div>
+            <div class="form-group checkbox-default">
+              <input type="checkbox" id="other-extra">
+              <label for="other-extra">Other extra-curriculars</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">&zwnj;</div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">What media outlets do you consume?</h4>
+            <div class="form-group checkbox-default">
+              <input type="checkbox" id="sfh">
+              <label for="sfh">Single family home</label>
+            </div>
+            <div class="form-group checkbox-default">
+              <input type="checkbox" id="sports">
+              <label for="sports">Sports</label>
+            </div>
+            <div class="form-group checkbox-default">
+              <input type="checkbox" id="clubs">
+              <label for="clubs">Clubs</label>
+            </div>
+            <div class="form-group checkbox-default">
+              <input type="checkbox" id="other-extra">
+              <label for="other-extra">Other extra-curriculars</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 mb-12">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Where do you like to shop? (CHECK AS MANY AS YOU WANT)</h4>
+            <div class="row">
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="amazon">
+                  <label for="amazon">Amazon</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="target">
+                  <label for="target">Target</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="walmart">
+                  <label for="walmart">Wal-Mart</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="kohls">
+                  <label for="kohls">Kohl's</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="forever21">
+                  <label for="forever21">Forever 21</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="kroger">
+                  <label for="kroger">Kroger</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="giant-eagle">
+                  <label for="giant-eagle">Giant Eagle</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="carters">
+                  <label for="carters">Carter's</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="gymboree">
+                  <label for="gymboree">Gymboree</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="old-navy">
+                  <label for="old-navy">Old Navy</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="amazon">
+                  <label for="amazon">Amazon</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="gap">
+                  <label for="gap">Gap</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="whole-foods">
+                  <label for="whole-foods">Whole Foods</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="trader-joes">
+                  <label for="trader-joes">Trader Joe's</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="cvs">
+                  <label for="cvs">CVS</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="j-crew">
+                  <label for="j-crew">J Crew</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="nordstroms">
+                  <label for="nordstroms">Nordstroms</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="ll-bean">
+                  <label for="ll-bean">LL Bean</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="rei">
+                  <label for="rei">REI</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="american-eagle">
+                  <label for="american-eagle">American Eagle</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="hollister">
+                  <label for="hollister">Hollister</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="eddie-bauer">
+                  <label for="eddie-bauer">Eddie Bauer</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="nike">
+                  <label for="nike">Nike</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="jc-pennys">
+                  <label for="jc-pennys">J.C. Penny’s</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="macys">
+                  <label for="macys">Macy's</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="saxxon-ave">
+                  <label for="saxxon-ave">Saxxon Ave.</label>
+              </div>
+              <div class="form-group col-lg-2 col-md-2 mb-2 checkbox-default">
+                  <input type="checkbox" id="other">
+                  <label for="other">Other</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">&zwnj;</div>
+    <div *ngIf="page === 4" class="row">
+      <div class="col-lg-4 col-md-4 mb-4"></div>
+      <div class="col-lg-4 col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="form-group checkbox-default">
+                <input type="checkbox" id="facebook-social">
+                <label for="facebook-social">Facebook</label>
+            </div>
+            <div class="form-group checkbox-default">
+                <input type="checkbox" id="amazon-social">
+                <label for="amazon-social">Amazon</label>
+            </div>
+            <div class="form-group checkbox-default">
+                <input type="checkbox" id="google-social">
+                <label for="google-social">Google</label>
+            </div>
+            <div class="form-group checkbox-default">
+                <input type="checkbox" id="outlook-social">
+                <label for="outlook-social">Outlook</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 mb-4"></div>
+    </div>
+    <div *ngIf="page === 1" class="row">
+      <div class="col-lg-10 col-md-10 mb-10"></div>
+      <div class="col-lg-2 col-md-2 mb-2">
+        <button class="btn btn-default float-right" (click)="next()">Next</button>
+      </div>
+    </div>
+    <div *ngIf="page === 2 || page === 3" class="row">
+      <div class="col-lg-2 col-md-2 mb-2">
+        <button class="btn btn-default" (click)="previous()">Previous</button>
+      </div>
+      <div class="col-lg-8 col-md-8 mb-8"></div>
+      <div class="col-lg-2 col-md-2 mb-2">
+        <button class="btn btn-default float-right" (click)="next()">Next</button>
+      </div>
+    </div>
+    <div *ngIf="page === 4" class="row">
+      <div class="col-lg-2 col-md-2 mb-2">
+        <button class="btn btn-default" (click)="previous()">Previous</button>
+      </div>
+      <div class="col-lg-8 col-md-8 mb-8"></div>
+      <div class="col-lg-2 col-md-2 mb-2">
+        <button class="btn btn-default float-right" (click)="submit()">Submit</button>
+      </div>
     </div>
   </div>
 </main>
